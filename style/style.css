@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../img/effek-blur.png);
+}
+
+.navbar-brand {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.nav-item {
+  font-family: Poppins;
+  font-size: 16px;
+}
+
+#hero {
+  background: url(../img/gatau\ lagi\ dah.png);
+  height: 100vh;
+  left: 0;
+  right: 0;
+  top: 50px;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden !important ;
+}
+
+#hero .img-bg {
+  margin-top: 120px;
+}
+
+#hero h5 {
+  font-family: Poppins;
+  font-size: 20px;
+}
+
+#hero h1 {
+  font-family: Poppins;
+  font-size: 70px;
+  font-weight: 700;
+  color: #5f596e;
+}
+
+#hero p {
+  font-family: Poppins;
+  font-size: 20px;
+}
+
+.margin-section {
+  margin-top: 200px;
+}
+
+#about h3 {
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 700;
+  color: #04004d;
+  margin-top: 170px;
+}
+
+#about p {
+  font-size: 16px;
+  color: #336c61;
+  width: 425px;
+}
+
+.card-layanan {
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 100%;
+  height: 278px;
+}
+
+.card-layanan h4 {
+  font-family: Poppins;
+  font-size: 24px;
+  color: #1e1e1e;
+}
+
+.card-layanan p {
+  font-family: Open Sans;
+  font-size: 16px;
+  color: #757575;
+  text-align: center;
+}
+
+#tugas h3 {
+  font-size: 35px;
+  font-family: poppins;
+  font-weight: 600;
+}
+
+#tugas p {
+  font-size: 16px;
+  font-family: poppins;
+  color: #bdbdbd;
+}
+
+#tugas .card {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px !important ;
+}
+
+#tugas .card-body h5 {
+  font-family: Poppins;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+#tugas .card-body p {
+  font-family: Poppins;
+  font-size: 14px;
+  color: #878787;
+}
+
+#tugas .card-body .detail-recomendasi span {
+  font-family: Poppins;
+  font-size: 14px;
+  color: #4d4d52;
+}
+
+@media screen and (max-width: 760px) {
+  #hero {
+    background: none !important ;
+    height: 400px;
+  }
+
+  #hero h1 {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 700;
+    color: #5f596e;
+  }
+}

@@ -1,7 +1,8 @@
 * {
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   margin: 0;
   padding: 0;
+  z-index: 2;
 }
 
 body {
@@ -53,7 +54,7 @@ body {
 }
 
 .margin-section {
-  margin-top: 200px;
+  margin-top: 60px;
 }
 
 #about h3 {
@@ -68,6 +69,12 @@ body {
   font-size: 16px;
   color: #336c61;
   width: 425px;
+}
+
+#about .container .container-fluid {
+  position: absolute;
+  right: -100px;
+  top: -50px;
 }
 
 .card-layanan {
@@ -90,6 +97,10 @@ body {
   text-align: center;
 }
 
+#tugas .margin-tugas {
+  margin-top: 200px;
+}
+
 #tugas h3 {
   font-size: 35px;
   font-family: poppins;
@@ -104,6 +115,11 @@ body {
 
 #tugas .card {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px !important ;
+  max-width: 350px !important;
+}
+
+#tugas .img-fluid {
+  height: 231px !important;
 }
 
 #tugas .card-body h5 {
@@ -118,22 +134,119 @@ body {
   color: #878787;
 }
 
-#tugas .card-body .detail-recomendasi span {
+#tugas .card-body .detail-recomendasi a {
   font-family: Poppins;
   font-size: 14px;
   color: #4d4d52;
+  text-decoration: none;
 }
 
-@media screen and (max-width: 760px) {
+#tugas .img-dekorasi {
+  position: absolute;
+  left: -70px;
+  z-index: 1;
+}
+
+@mport url(//fonts.googleapis.com/css?family=Montserrat:300,500);
+.team4 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+}
+
+.team4 h1,
+.team4 h2,
+.team4 h3,
+.team4 h4,
+.team4 h5,
+.team4 h6 {
+  color: #3e4555;
+}
+
+.team4 .font-weight-medium {
+  font-weight: 500;
+}
+
+.team4 h5 {
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.team4 .subtitle {
+  color: #8d97ad;
+  line-height: 24px;
+  font-size: 13px;
+}
+
+.team4 ul li a {
+  color: #8d97ad;
+  padding-right: 15px;
+  -webkit-transition: 0.1s ease-in;
+  -o-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+.team4 ul li a:hover {
+  -webkit-transform: translate3d(0px, -5px, 0px);
+  transform: translate3d(0px, -5px, 0px);
+  color: #316ce8;
+}
+
+/* MOBILE  */
+
+@media screen and (max-width: 670px) {
+  body {
+    overflow-x: hidden !important;
+  }
   #hero {
     background: none !important ;
-    height: 400px;
   }
 
   #hero h1 {
-    font-family: Poppins;
-    font-size: 30px;
-    font-weight: 700;
-    color: #5f596e;
+    font-size: 40px;
   }
+
+  #hero .img-bg {
+    margin-top: 50px;
+  }
+
+  #hero h5 {
+    font-size: 18px;
+  }
+
+  #hero p {
+    font-size: 18px;
+  }
+
+  #hero .img-hp img {
+    position: absolute;
+    width: 500px;
+    bottom: -300px !important;
+    right: -150px;
+    top: 260px;
+  }
+  #about h2 {
+    font-size: 30px;
+    font-family: poppins;
+    font-weight: 600;
+    color: #04004d;
+  }
+  #about h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  #about p {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  #tugas .card-body .detail-recomendasi a {
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+
+@media all and (max-width: 1000px) {
 }

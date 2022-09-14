@@ -8,6 +8,15 @@
     <!-- css -->
     <link rel="stylesheet" href="style/style.css" />
 
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- animasi -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -28,7 +37,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="img/Luxi-Hosting-Logo.png" class="img-fluid" width="30px" alt="" />
@@ -58,10 +67,10 @@
     </nav>
 
     <!-- Hero -->
-    <section id="hero" class="mt-5">
+    <section id="hero" class="">
       <div class="container-fluid position-relative">
-        <div class="d-md-none d-block">
-          <img src="img/assets.png" class="position-absolute start-0 top-0" alt="" />
+        <div class="img-hp d-md-none d-block">
+          <img src="img/hero-img.png" class="position-absolute bottom-0" alt="" />
         </div>
         <div class="container position-relative">
           <div class="row img-assets">
@@ -83,29 +92,33 @@
     <section id="about">
       <div class="container position-relative">
         <div class="row">
-          <div class="col-lg-6 position-relative">
-            <img src="img/card-update.png" class="img-fluid position-absolute start-0 mt-5" alt="" />
+          <h2 class="text-center d-sm-none">Tentang Matakuliah</h2>
+          <div class="col-lg-6 col-sm-12 position-lg-relative k">
+            <img src="img/card-update.png" class="img-fluid position-lg-absolute start-lg-0 mt-lg-5 mt-md-1" alt="" />
           </div>
-          <div class="col-lg-6 position-relative">
-            <img src="img/img-sectiom.png" class="position-absolute end-0" alt="" />
+          <div class="col-lg-6 col-sm-12 position-lg-relative">
+            <img src="img/img-sectiom.png" class="d-sm-none d-md-block d-lg-block d-none position-absolute end-0 top-0" alt="" />
             <h3 class="">Pemrograman Web 2022/2023</h3>
-            <p class="my-3">
+            <p class="my-3 text-center text-lg-start">
               Mata kuliah Pemrograman Web merupakan mata kuliah yang akan mempelajari bagaimana kita belajar untuk membangun sebuah website mulai dari yang paling <br />awal sampai dengan pada tahap production. <br /><br />
               Selama satu semester ke depan kita akan belajar beragam materi, mulai dari pembuatan layout aw..
             </p>
-            <div class="btn btn-primary text-center">Read More</div>
+            <div class="text-center text-sm-start">
+              <div class="btn btn-primary">Read More</div>
+            </div>
+
+            <div class="container-fluid position-relative">
+              <img src="img/Vector.png" class="position-absolute end-0" alt="" />
+            </div>
           </div>
         </div>
-      </div>
-      <div class="container-fluid">
-        <img src="img/Vector.png" class="position-absolute end-0" alt="" />
       </div>
     </section>
 
     <div class="container-fluid position-relative">
       <div class="container margin-section">
         <div class="row">
-          <div class="col-lg-4" data-aos="zoom-in">
+          <div class="col-lg-4 mt-3 mt-lg-0" data-aos="zoom-in">
             <div class="card-layanan text-center">
               <div class="circle-img text-center">
                 <img src="img/Icon-teacher.png" class="" alt="" />
@@ -114,7 +127,7 @@
               <p class="text-center">We teach in small groups with experienced, supportive staff who are trained to understand some of the problems our students face.</p>
             </div>
           </div>
-          <div class="col-lg-4" data-aos="zoom-in">
+          <div class="col-lg-4 mt-3 mt-lg-0" data-aos="zoom-in">
             <div class="card-layanan text-center">
               <div class="circle-img text-center">
                 <img src="img/icon-progresif.png" class="" alt="" />
@@ -123,7 +136,7 @@
               <p class="text-center">Our mission is to use our knowledge, skills, and networks to equip people with multiple disadvantages with the skills to gain and sustain employment</p>
             </div>
           </div>
-          <div class="col-lg-4" data-aos="zoom-in">
+          <div class="col-lg-4 mt-5 mt-lg-0" data-aos="zoom-in">
             <div class="card-layanan text-center">
               <div class="circle-img text-center">
                 <img src="img/Icon-graduate.png" class="" alt="" />
@@ -148,7 +161,7 @@
 
     <section id="tugas">
       <div class="container-fluid position-relative">
-        <div class="container margin-section">
+        <div class="container margin-tugas">
           <div class="row">
             <div class="col">
               <h3 class="">Tugas</h3>
@@ -162,90 +175,178 @@
             </div>
           </div>
           <div class="row">
-            <div class="row mt-5">
-              <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="1000">
+            <div class="row mt-4 mx-auto">
+              <div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up" data-aos-duration="1000">
                 <div class="card p-2">
                   <img src="img/tugas-html.png" class="img-fluid rounded-1" alt="" />
+                  <div class="btn btn-primary"><a href="" class="text-white text-decoration-none">Cek Tugas</a></div>
                   <div class="card-body">
                     <h5>Html Fundamental</h5>
-                    <p>Technology > Html</p>
-                  </div>
-                  <div class="detail-recomendasi d-flex justify-content-between px-4 pt-4">
-                    <span> <img src="img/icon-github.png" alt="" /> github </span>
-                    <span> <img src="img/icon-pertemuan.png" alt="" /> Pertemuan 1 </span>
-                    <span> </span>
+                    <p>Technology > Web development</p>
+                    <div class="detail-recomendasi d-flex justify-content-between py-2">
+                      <span>
+                        <a href=""><img src="img/GitHub-Mark 1.png" alt="" /> source code </a>
+                      </span>
+                      <span class="mt-2">
+                        <a href=""><img src="img/pertemuan ke.png" alt="" /> Pertemuan 1 </a>
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
+              <div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up" data-aos-duration="2000">
                 <div class="card p-2">
                   <img src="img/2955425.jpg" class="img-fluid rounded-1" alt="" />
+                  <div class="btn btn-primary"><a href="" class="text-white text-decoration-none">Coming Soon</a></div>
                   <div class="card-body">
                     <h5>Css Fundamental</h5>
-                    <p>Technology > Html & Css</p>
-                  </div>
-                  <div class="detail-recomendasi d-flex justify-content-between px-4 pt-3">
-                    <span> <img src="img/icon-github.png" alt="" /> github </span>
-                    <span> <img src="img/icon-pertemuan.png" alt="" /> Pertemuan 2 </span>
-                    <span> </span>
+                    <p>Technology > Web development</p>
+                    <div class="detail-recomendasi d-flex justify-content-between py-2">
+                      <span>
+                        <a href=""><img src="img/GitHub-Mark 1.png" alt="" /> source code </a>
+                      </span>
+                      <span class="mt-2">
+                        <a href=""><img src="img/pertemuan ke.png" alt="" /> Pertemuan 2 </a>
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="3000">
+              <div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up" data-aos-duration="3000">
                 <div class="card p-2">
                   <img src="img/js.png" class="img-fluid rounded-1" alt="" />
+                  <div class="btn btn-primary"><a href="" class="text-white text-decoration-none">Coming Soon</a></div>
                   <div class="card-body">
                     <h5>Javascript Fundamental</h5>
-                    <p>Technology > Html,Css & Js</p>
-                  </div>
-                  <div class="detail-recomendasi d-flex justify-content-between px-4 pt-3">
-                    <span> <img src="img/icon-github.png" alt="" /> github </span>
-                    <span> <img src="img/icon-pertemuan.png" alt="" /> Pertemuan 1 </span>
-                    <span> </span>
+                    <p>Technology > Web development</p>
+                    <div class="detail-recomendasi d-flex justify-content-between py-2">
+                      <span>
+                        <a href=""><img src="img/GitHub-Mark 1.png" alt="" /> source code </a>
+                      </span>
+                      <span class="mt-2">
+                        <a href=""><img src="img/pertemuan ke.png" alt="" /> Pertemuan 3 </a>
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
+              <div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up" data-aos-duration="1000">
                 <div class="card p-2">
                   <img src="img/7063891.jpg" class="img-fluid rounded-1" alt="" />
+                  <div class="btn btn-primary"><a href="" class="text-white text-decoration-none">Coming Soon</a></div>
                   <div class="card-body">
                     <h5>Restful API, NPM, Bootstrap</h5>
                     <p>Technology > Web development</p>
-                  </div>
-                  <div class="detail-recomendasi d-flex justify-content-between px-4 pt-4">
-                    <span> <img src="img/icon-github.png" alt="" /> github </span>
-                    <span> <img src="img/icon-pertemuan.png" alt="" /> Pertemuan 1 </span>
-                    <span> </span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
-                <div class="card p-2">
-                  <img src="img/tugas-html.png" class="img-fluid rounded-1" alt="" />
-                  <div class="card-body">
-                    <h5>Html Fundamental</h5>
-                    <p>Technology > Html</p>
-                  </div>
-                  <div class="detail-recomendasi d-flex justify-content-between px-4 pt-4">
-                    <span> <img src="img/icon-github.png" alt="" /> github </span>
-                    <span> <img src="img/icon-pertemuan.png" alt="" /> Pertemuan 1 </span>
-                    <span> </span>
+                    <div class="detail-recomendasi d-flex justify-content-between py-2">
+                      <span>
+                        <a href=""><img src="img/GitHub-Mark 1.png" alt="" /> source code </a>
+                      </span>
+                      <span class="mt-2">
+                        <a href=""><img src="img/pertemuan ke.png" alt="" /> Pertemuan 4 </a>
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
+              <div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up" data-aos-duration="2000">
                 <div class="card p-2">
-                  <img src="img/tugas-html.png" class="img-fluid rounded-1" alt="" />
+                  <img src="img/php-fix.png" class="img-fluid rounded-1" alt="" />
+                  <div class="btn btn-primary"><a href="" class="text-white text-decoration-none">Coming Soon</a></div>
                   <div class="card-body">
-                    <h5>Html Fundamental</h5>
-                    <p>Technology > Html</p>
-                  </div>
-                  <div class="detail-recomendasi d-flex justify-content-between px-4 pt-4">
-                    <span> <img src="img/icon-github.png" alt="" /> github </span>
-                    <span> <img src="img/icon-pertemuan.png" alt="" /> Pertemuan 1 </span>
-                    <span> </span>
+                    <h5>PHP & MySql</h5>
+                    <p>Technology > Web development</p>
+                    <div class="detail-recomendasi d-flex justify-content-between py-2">
+                      <span>
+                        <a href=""><img src="img/GitHub-Mark 1.png" alt="" /> source code </a>
+                      </span>
+                      <span class="mt-2">
+                        <a href=""><img src="img/pertemuan ke.png" alt="" /> Pertemuan 5 </a>
+                      </span>
+                    </div>
                   </div>
                 </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up" data-aos-duration="3000">
+                <div class="card p-2">
+                  <img src="img/laravek.jpg" class="img-fluid rounded-1" alt="" />
+                  <div class="btn btn-primary"><a href="" class="text-white text-decoration-none">Coming Soon</a></div>
+                  <div class="card-body">
+                    <h5>Framework Laravel</h5>
+                    <p>Technology > Web development</p>
+                    <div class="detail-recomendasi d-flex justify-content-between py-2">
+                      <span>
+                        <a href=""><img src="img/GitHub-Mark 1.png" alt="" /> source code </a>
+                      </span>
+                      <span class="mt-2">
+                        <a href=""><img src="img/pertemuan ke.png" alt="" /> Pertemuan 6 </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-5 img-dekorasi">
+          <img src="img/dekorasi.png" class="position-absolute" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="anggota">
+      <div class="container margin-section">
+        <div class="row">
+          <div class="col text-center">
+            <h2></h2>
+          </div>
+        </div>
+
+        <div class="py-5 team4">
+          <div class="container">
+            <div class="row justify-content-center mb-4">
+              <div class="col-md-7 text-center">
+                <h3 class="mb-3">Experienced & Professional Team</h3>
+                <h6 class="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+              </div>
+            </div>
+            <div class="row">
+              <!-- column  -->
+
+              <!-- column  -->
+              <!-- column  -->
+              <!-- column  -->
+              <!-- column  -->
+              <!-- column  -->
+              <!-- column  -->
+              <div class="col-lg-3 offset-sm-5 mb-4 mt-5">
+                <!-- Row -->
+                <div class="row">
+                  <div class="col-md-12">
+                    <img src="img/avatar7.png" alt="wrapkit" class="img-fluid rounded-circle" />
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <div class="pt-2">
+                      <h5 class="mt-4 font-weight-medium mb-0">Ifa Aprillianto</h5>
+                      <h6 class="subtitle mb-3">Developer Team</h6>
+                      <p>You can relay on our amazing features list and also our customer services will be great experience.</p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-behance"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- Row -->
               </div>
             </div>
           </div>
